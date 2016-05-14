@@ -7,13 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C7270A7F1B7573B1002319B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7270A7E1B7573B1002319B6 /* main.m */; };
 		C7270A821B7573B1002319B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7270A811B7573B1002319B6 /* AppDelegate.m */; };
-		C7270A851B7573B1002319B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7270A841B7573B1002319B6 /* ViewController.m */; };
-		C7270A881B7573B1002319B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7270A861B7573B1002319B6 /* Main.storyboard */; };
 		C7270A8A1B7573B1002319B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7270A891B7573B1002319B6 /* Images.xcassets */; };
 		C7270A8D1B7573B1002319B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7270A8B1B7573B1002319B6 /* LaunchScreen.xib */; };
 		C7270A991B7573B1002319B6 /* The_Daily_ChargerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7270A981B7573B1002319B6 /* The_Daily_ChargerTests.m */; };
+		C73A4C191B9E7302005591F0 /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = C73A4C181B9E7302005591F0 /* Settings.m */; };
+		C73A4C1D1B9E939F005591F0 /* PeriodNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = C73A4C1B1B9E939F005591F0 /* PeriodNotes.m */; };
+		C73A4C1E1B9E939F005591F0 /* PeriodNotes.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73A4C1C1B9E939F005591F0 /* PeriodNotes.xib */; };
+		C75309BD1B9171E80034F980 /* EditPeriodForSix.xib in Resources */ = {isa = PBXBuildFile; fileRef = C75309BC1B9171E80034F980 /* EditPeriodForSix.xib */; };
+		C781EBB11B758E62008862A9 /* EditBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = C781EBA71B758E62008862A9 /* EditBlock.xib */; };
+		C781EBB21B758E62008862A9 /* EditBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBA91B758E62008862A9 /* EditBlock.m */; };
+		C781EBB31B758E62008862A9 /* EditDay.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBAB1B758E62008862A9 /* EditDay.m */; };
+		C781EBB41B758E62008862A9 /* EditPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBAD1B758E62008862A9 /* EditPeriod.m */; };
+		C781EBB51B758E62008862A9 /* EditPeriod.xib in Resources */ = {isa = PBXBuildFile; fileRef = C781EBAE1B758E62008862A9 /* EditPeriod.xib */; };
+		C781EBB61B758E62008862A9 /* EditSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBB01B758E62008862A9 /* EditSchedule.m */; };
+		C781EBB91B758E72008862A9 /* CustomMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBB81B758E72008862A9 /* CustomMethods.m */; };
+		C781EBBD1B758E87008862A9 /* DayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBBC1B758E87008862A9 /* DayView.m */; };
+		C781EBC71B758EBF008862A9 /* GetSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBC51B758EBF008862A9 /* GetSchedule.m */; };
+		C781EBC81B758EBF008862A9 /* GetSchedule.xib in Resources */ = {isa = PBXBuildFile; fileRef = C781EBC61B758EBF008862A9 /* GetSchedule.xib */; };
+		C781EBCB1B758ED4008862A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBCA1B758ED4008862A9 /* main.m */; };
+		C781EBCD1B758EDD008862A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C781EBCC1B758EDD008862A9 /* Main.storyboard */; };
+		C781EBD11B758EEC008862A9 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = C781EBCE1B758EEC008862A9 /* menu.png */; };
+		C781EBD21B758EEC008862A9 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C781EBCF1B758EEC008862A9 /* menu@2x.png */; };
+		C781EBD31B758EEC008862A9 /* nav_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C781EBD01B758EEC008862A9 /* nav_bg.png */; };
+		C781EBD71B758EF7008862A9 /* Period.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBD51B758EF7008862A9 /* Period.m */; };
+		C781EBD81B758EF7008862A9 /* PeriodTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C781EBD61B758EF7008862A9 /* PeriodTableCell.xib */; };
+		C781EBDC1B758F08008862A9 /* ShowTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBDB1B758F08008862A9 /* ShowTextViewController.m */; };
+		C781EBE21B758F14008862A9 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBDE1B758F14008862A9 /* SidebarViewController.m */; };
+		C781EBE31B758F14008862A9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBE11B758F14008862A9 /* SWRevealViewController.m */; };
+		C781EBE61B758F1B008862A9 /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBE51B758F1B008862A9 /* UIColor+Custom.m */; };
+		C781EBE91B758F21008862A9 /* ViewSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBE81B758F21008862A9 /* ViewSchedule.m */; };
+		C781EBF51B75A57A008862A9 /* FCColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBEC1B75A57A008862A9 /* FCColorPickerViewController.m */; };
+		C781EBF61B75A57A008862A9 /* FCColorPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C781EBED1B75A57A008862A9 /* FCColorPickerViewController.xib */; };
+		C781EBF71B75A57A008862A9 /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBF01B75A57A008862A9 /* FCBrightDarkGradView.m */; };
+		C781EBF81B75A57A008862A9 /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBF21B75A57A008862A9 /* FCColorSwatchView.m */; };
+		C781EBF91B75A57A008862A9 /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = C781EBF41B75A57A008862A9 /* colormap.png */; };
+		C7FF99311B75B19000FA655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FF99301B75B19000FA655E /* UIKit.framework */; };
+		C7FF99421B75BD8900FA655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FF99411B75BD8900FA655E /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		C7FF99441B75BD9F00FA655E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FF99431B75BD9F00FA655E /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,17 +60,67 @@
 /* Begin PBXFileReference section */
 		C7270A791B7573B0002319B6 /* The Daily Charger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Daily Charger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7270A7D1B7573B1002319B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7270A7E1B7573B1002319B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7270A801B7573B1002319B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7270A811B7573B1002319B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7270A831B7573B1002319B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7270A841B7573B1002319B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C7270A871B7573B1002319B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7270A891B7573B1002319B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7270A8C1B7573B1002319B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C7270A921B7573B1002319B6 /* The Daily ChargerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Daily ChargerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7270A971B7573B1002319B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7270A981B7573B1002319B6 /* The_Daily_ChargerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Daily_ChargerTests.m; sourceTree = "<group>"; };
+		C73A4C171B9E7302005591F0 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		C73A4C181B9E7302005591F0 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		C73A4C1A1B9E939F005591F0 /* PeriodNotes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeriodNotes.h; sourceTree = "<group>"; };
+		C73A4C1B1B9E939F005591F0 /* PeriodNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriodNotes.m; sourceTree = "<group>"; };
+		C73A4C1C1B9E939F005591F0 /* PeriodNotes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeriodNotes.xib; sourceTree = "<group>"; };
+		C75309BC1B9171E80034F980 /* EditPeriodForSix.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPeriodForSix.xib; sourceTree = "<group>"; };
+		C781EBA71B758E62008862A9 /* EditBlock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBlock.xib; sourceTree = "<group>"; };
+		C781EBA81B758E62008862A9 /* EditBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBlock.h; sourceTree = "<group>"; };
+		C781EBA91B758E62008862A9 /* EditBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBlock.m; sourceTree = "<group>"; };
+		C781EBAA1B758E62008862A9 /* EditDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditDay.h; sourceTree = "<group>"; };
+		C781EBAB1B758E62008862A9 /* EditDay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditDay.m; sourceTree = "<group>"; };
+		C781EBAC1B758E62008862A9 /* EditPeriod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPeriod.h; sourceTree = "<group>"; };
+		C781EBAD1B758E62008862A9 /* EditPeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPeriod.m; sourceTree = "<group>"; };
+		C781EBAE1B758E62008862A9 /* EditPeriod.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPeriod.xib; sourceTree = "<group>"; };
+		C781EBAF1B758E62008862A9 /* EditSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSchedule.h; sourceTree = "<group>"; };
+		C781EBB01B758E62008862A9 /* EditSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSchedule.m; sourceTree = "<group>"; };
+		C781EBB71B758E72008862A9 /* CustomMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMethods.h; sourceTree = "<group>"; };
+		C781EBB81B758E72008862A9 /* CustomMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMethods.m; sourceTree = "<group>"; };
+		C781EBBB1B758E87008862A9 /* DayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayView.h; sourceTree = "<group>"; };
+		C781EBBC1B758E87008862A9 /* DayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayView.m; sourceTree = "<group>"; };
+		C781EBC41B758EBF008862A9 /* GetSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSchedule.h; sourceTree = "<group>"; };
+		C781EBC51B758EBF008862A9 /* GetSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSchedule.m; sourceTree = "<group>"; };
+		C781EBC61B758EBF008862A9 /* GetSchedule.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetSchedule.xib; sourceTree = "<group>"; };
+		C781EBC91B758ECA008862A9 /* IntegerLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerLibrary.h; sourceTree = "<group>"; };
+		C781EBCA1B758ED4008862A9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C781EBCC1B758EDD008862A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C781EBCE1B758EEC008862A9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		C781EBCF1B758EEC008862A9 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		C781EBD01B758EEC008862A9 /* nav_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_bg.png; sourceTree = "<group>"; };
+		C781EBD41B758EF7008862A9 /* Period.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Period.h; sourceTree = "<group>"; };
+		C781EBD51B758EF7008862A9 /* Period.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Period.m; sourceTree = "<group>"; };
+		C781EBD61B758EF7008862A9 /* PeriodTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeriodTableCell.xib; sourceTree = "<group>"; };
+		C781EBDA1B758F08008862A9 /* ShowTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowTextViewController.h; sourceTree = "<group>"; };
+		C781EBDB1B758F08008862A9 /* ShowTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTextViewController.m; sourceTree = "<group>"; };
+		C781EBDD1B758F14008862A9 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
+		C781EBDE1B758F14008862A9 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
+		C781EBDF1B758F14008862A9 /* StringLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLibrary.h; sourceTree = "<group>"; };
+		C781EBE01B758F14008862A9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		C781EBE11B758F14008862A9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C781EBE41B758F1B008862A9 /* UIColor+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
+		C781EBE51B758F1B008862A9 /* UIColor+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Custom.m"; sourceTree = "<group>"; };
+		C781EBE71B758F21008862A9 /* ViewSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSchedule.h; sourceTree = "<group>"; };
+		C781EBE81B758F21008862A9 /* ViewSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSchedule.m; sourceTree = "<group>"; usesTabs = 0; };
+		C781EBEB1B75A57A008862A9 /* FCColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorPickerViewController.h; sourceTree = "<group>"; };
+		C781EBEC1B75A57A008862A9 /* FCColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorPickerViewController.m; sourceTree = "<group>"; };
+		C781EBED1B75A57A008862A9 /* FCColorPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FCColorPickerViewController.xib; sourceTree = "<group>"; };
+		C781EBEF1B75A57A008862A9 /* FCBrightDarkGradView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBrightDarkGradView.h; sourceTree = "<group>"; };
+		C781EBF01B75A57A008862A9 /* FCBrightDarkGradView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCBrightDarkGradView.m; sourceTree = "<group>"; };
+		C781EBF11B75A57A008862A9 /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
+		C781EBF21B75A57A008862A9 /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
+		C781EBF41B75A57A008862A9 /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		C7FF99301B75B19000FA655E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7FF99411B75BD8900FA655E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7FF99431B75BD9F00FA655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7FF99441B75BD9F00FA655E /* CoreGraphics.framework in Frameworks */,
+				C7FF99421B75BD8900FA655E /* Foundation.framework in Frameworks */,
+				C7FF99311B75B19000FA655E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +149,7 @@
 			children = (
 				C7270A7B1B7573B0002319B6 /* The Daily Charger */,
 				C7270A951B7573B1002319B6 /* The Daily ChargerTests */,
+				C781EBFA1B75AE5B008862A9 /* Frameworks */,
 				C7270A7A1B7573B0002319B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,11 +166,24 @@
 		C7270A7B1B7573B0002319B6 /* The Daily Charger */ = {
 			isa = PBXGroup;
 			children = (
+				C73A4C161B9E613B005591F0 /* Settings */,
+				C781EBBA1B758E75008862A9 /* View Schedule */,
+				C781EBA61B758E54008862A9 /* Edit Schedule */,
+				C781EBEA1B75A56C008862A9 /* Color Picker */,
+				C781EBD91B758EFC008862A9 /* Show Text */,
+				C781EBB71B758E72008862A9 /* CustomMethods.h */,
+				C781EBB81B758E72008862A9 /* CustomMethods.m */,
+				C781EBDF1B758F14008862A9 /* StringLibrary.h */,
+				C781EBC91B758ECA008862A9 /* IntegerLibrary.h */,
+				C781EBE41B758F1B008862A9 /* UIColor+Custom.h */,
+				C781EBE51B758F1B008862A9 /* UIColor+Custom.m */,
+				C781EBDD1B758F14008862A9 /* SidebarViewController.h */,
+				C781EBDE1B758F14008862A9 /* SidebarViewController.m */,
+				C781EBE01B758F14008862A9 /* SWRevealViewController.h */,
+				C781EBE11B758F14008862A9 /* SWRevealViewController.m */,
 				C7270A801B7573B1002319B6 /* AppDelegate.h */,
 				C7270A811B7573B1002319B6 /* AppDelegate.m */,
-				C7270A831B7573B1002319B6 /* ViewController.h */,
-				C7270A841B7573B1002319B6 /* ViewController.m */,
-				C7270A861B7573B1002319B6 /* Main.storyboard */,
+				C781EBCC1B758EDD008862A9 /* Main.storyboard */,
 				C7270A891B7573B1002319B6 /* Images.xcassets */,
 				C7270A8B1B7573B1002319B6 /* LaunchScreen.xib */,
 				C7270A7C1B7573B0002319B6 /* Supporting Files */,
@@ -96,8 +194,11 @@
 		C7270A7C1B7573B0002319B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C781EBCE1B758EEC008862A9 /* menu.png */,
+				C781EBCF1B758EEC008862A9 /* menu@2x.png */,
+				C781EBD01B758EEC008862A9 /* nav_bg.png */,
+				C781EBCA1B758ED4008862A9 /* main.m */,
 				C7270A7D1B7573B1002319B6 /* Info.plist */,
-				C7270A7E1B7573B1002319B6 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +218,103 @@
 				C7270A971B7573B1002319B6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C73A4C161B9E613B005591F0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C73A4C171B9E7302005591F0 /* Settings.h */,
+				C73A4C181B9E7302005591F0 /* Settings.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		C781EBA61B758E54008862A9 /* Edit Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				C781EBAF1B758E62008862A9 /* EditSchedule.h */,
+				C781EBB01B758E62008862A9 /* EditSchedule.m */,
+				C781EBAA1B758E62008862A9 /* EditDay.h */,
+				C781EBAB1B758E62008862A9 /* EditDay.m */,
+				C781EBAC1B758E62008862A9 /* EditPeriod.h */,
+				C781EBAD1B758E62008862A9 /* EditPeriod.m */,
+				C781EBAE1B758E62008862A9 /* EditPeriod.xib */,
+				C75309BC1B9171E80034F980 /* EditPeriodForSix.xib */,
+				C781EBA81B758E62008862A9 /* EditBlock.h */,
+				C781EBA91B758E62008862A9 /* EditBlock.m */,
+				C781EBA71B758E62008862A9 /* EditBlock.xib */,
+				C781EBC41B758EBF008862A9 /* GetSchedule.h */,
+				C781EBC51B758EBF008862A9 /* GetSchedule.m */,
+				C781EBC61B758EBF008862A9 /* GetSchedule.xib */,
+			);
+			name = "Edit Schedule";
+			sourceTree = "<group>";
+		};
+		C781EBBA1B758E75008862A9 /* View Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				C781EBE71B758F21008862A9 /* ViewSchedule.h */,
+				C781EBE81B758F21008862A9 /* ViewSchedule.m */,
+				C781EBBB1B758E87008862A9 /* DayView.h */,
+				C781EBBC1B758E87008862A9 /* DayView.m */,
+				C781EBD41B758EF7008862A9 /* Period.h */,
+				C781EBD51B758EF7008862A9 /* Period.m */,
+				C781EBD61B758EF7008862A9 /* PeriodTableCell.xib */,
+				C73A4C1A1B9E939F005591F0 /* PeriodNotes.h */,
+				C73A4C1B1B9E939F005591F0 /* PeriodNotes.m */,
+				C73A4C1C1B9E939F005591F0 /* PeriodNotes.xib */,
+			);
+			name = "View Schedule";
+			sourceTree = "<group>";
+		};
+		C781EBD91B758EFC008862A9 /* Show Text */ = {
+			isa = PBXGroup;
+			children = (
+				C781EBDA1B758F08008862A9 /* ShowTextViewController.h */,
+				C781EBDB1B758F08008862A9 /* ShowTextViewController.m */,
+			);
+			name = "Show Text";
+			sourceTree = "<group>";
+		};
+		C781EBEA1B75A56C008862A9 /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				C781EBEB1B75A57A008862A9 /* FCColorPickerViewController.h */,
+				C781EBEC1B75A57A008862A9 /* FCColorPickerViewController.m */,
+				C781EBED1B75A57A008862A9 /* FCColorPickerViewController.xib */,
+				C781EBEE1B75A57A008862A9 /* Private */,
+				C781EBF31B75A57A008862A9 /* Resources */,
+			);
+			name = "Color Picker";
+			sourceTree = "<group>";
+		};
+		C781EBEE1B75A57A008862A9 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				C781EBEF1B75A57A008862A9 /* FCBrightDarkGradView.h */,
+				C781EBF01B75A57A008862A9 /* FCBrightDarkGradView.m */,
+				C781EBF11B75A57A008862A9 /* FCColorSwatchView.h */,
+				C781EBF21B75A57A008862A9 /* FCColorSwatchView.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		C781EBF31B75A57A008862A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C781EBF41B75A57A008862A9 /* colormap.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C781EBFA1B75AE5B008862A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7FF99431B75BD9F00FA655E /* CoreGraphics.framework */,
+				C7FF99411B75BD8900FA655E /* Foundation.framework */,
+				C7FF99301B75B19000FA655E /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +366,7 @@
 				TargetAttributes = {
 					C7270A781B7573AF002319B6 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2X7X4A88N4;
 					};
 					C7270A911B7573B1002319B6 = {
 						CreatedOnToolsVersion = 6.4;
@@ -199,8 +398,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7270A881B7573B1002319B6 /* Main.storyboard in Resources */,
+				C781EBD21B758EEC008862A9 /* menu@2x.png in Resources */,
+				C781EBB51B758E62008862A9 /* EditPeriod.xib in Resources */,
+				C781EBD81B758EF7008862A9 /* PeriodTableCell.xib in Resources */,
 				C7270A8D1B7573B1002319B6 /* LaunchScreen.xib in Resources */,
+				C73A4C1E1B9E939F005591F0 /* PeriodNotes.xib in Resources */,
+				C781EBF91B75A57A008862A9 /* colormap.png in Resources */,
+				C781EBB11B758E62008862A9 /* EditBlock.xib in Resources */,
+				C781EBC81B758EBF008862A9 /* GetSchedule.xib in Resources */,
+				C781EBD11B758EEC008862A9 /* menu.png in Resources */,
+				C781EBF61B75A57A008862A9 /* FCColorPickerViewController.xib in Resources */,
+				C781EBCD1B758EDD008862A9 /* Main.storyboard in Resources */,
+				C75309BD1B9171E80034F980 /* EditPeriodForSix.xib in Resources */,
+				C781EBD31B758EEC008862A9 /* nav_bg.png in Resources */,
 				C7270A8A1B7573B1002319B6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +429,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7270A851B7573B1002319B6 /* ViewController.m in Sources */,
+				C781EBE31B758F14008862A9 /* SWRevealViewController.m in Sources */,
+				C781EBB41B758E62008862A9 /* EditPeriod.m in Sources */,
+				C781EBBD1B758E87008862A9 /* DayView.m in Sources */,
+				C73A4C191B9E7302005591F0 /* Settings.m in Sources */,
+				C781EBDC1B758F08008862A9 /* ShowTextViewController.m in Sources */,
+				C781EBE21B758F14008862A9 /* SidebarViewController.m in Sources */,
+				C781EBD71B758EF7008862A9 /* Period.m in Sources */,
+				C781EBE61B758F1B008862A9 /* UIColor+Custom.m in Sources */,
+				C73A4C1D1B9E939F005591F0 /* PeriodNotes.m in Sources */,
+				C781EBB61B758E62008862A9 /* EditSchedule.m in Sources */,
+				C781EBB31B758E62008862A9 /* EditDay.m in Sources */,
 				C7270A821B7573B1002319B6 /* AppDelegate.m in Sources */,
-				C7270A7F1B7573B1002319B6 /* main.m in Sources */,
+				C781EBC71B758EBF008862A9 /* GetSchedule.m in Sources */,
+				C781EBB21B758E62008862A9 /* EditBlock.m in Sources */,
+				C781EBF71B75A57A008862A9 /* FCBrightDarkGradView.m in Sources */,
+				C781EBF81B75A57A008862A9 /* FCColorSwatchView.m in Sources */,
+				C781EBE91B758F21008862A9 /* ViewSchedule.m in Sources */,
+				C781EBF51B75A57A008862A9 /* FCColorPickerViewController.m in Sources */,
+				C781EBCB1B758ED4008862A9 /* main.m in Sources */,
+				C781EBB91B758E72008862A9 /* CustomMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +471,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C7270A861B7573B1002319B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C7270A871B7573B1002319B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C7270A8B1B7573B1002319B6 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,9 +566,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "The Daily Charger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,9 +584,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "The Daily Charger/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -416,6 +651,7 @@
 				C7270A9E1B7573B1002319B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7270A9F1B7573B1002319B6 /* Build configuration list for PBXNativeTarget "The Daily ChargerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +660,7 @@
 				C7270AA11B7573B1002319B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
