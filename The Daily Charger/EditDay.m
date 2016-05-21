@@ -4,12 +4,11 @@
 //
 
 #import "EditDay.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 #import "Period.h"
 #import "EditPeriod.h"
 #import "CustomMethods.h"
 #import "UIColor+Custom.h"
-#import "IntegerLibrary.h"
 #import <UIKit/UIKit.h>
 
 static NSMutableArray *scheduleArray;
@@ -161,7 +160,7 @@ static NSMutableArray *scheduleArray;
                         period[kColor] = data[kColor];
                 } else {
                     if(data[kColor])
-                        period[kColor] = [UIColor dictionaryFromColor:[UIColor paleColor:[UIColor colorFromDictionary:data[kColor]] withFactor:paleFactor]];
+                        period[kColor] = [UIColor dictionaryFromColor:[UIColor paleColor:[UIColor colorFromDictionary:data[kColor]] withFactor:[[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Pale Factor"] integerValue]]];
                 }
                 
                 if(data[kIsFree]){ //if free state changed, set all to new state

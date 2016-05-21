@@ -4,12 +4,11 @@
 //
 
 #import "Period.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 #import "CustomMethods.h"
 #import "UIColor+Custom.h"
 #import "EditPeriod.h"
 #import "EditBlock.h"
-#import "IntegerLibrary.h"
 #import "PeriodNotes.h"
 #import <UIKit/UIKit.h>
 

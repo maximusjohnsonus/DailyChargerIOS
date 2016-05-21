@@ -4,8 +4,7 @@
 //
 
 #import "CustomMethods.h"
-#import "StringLibrary.h"
-#import "IntegerLibrary.h"
+#import "KeyDefinitions.h"
 #import "UIColor+Custom.h"
 
 int cycleDays[] = {0, 1, -1, -1, 2, 3, 4, 5, 0, -1, -1, 6, 7, 8, 9, 1, -1, -1, -1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, 2, 3, 4, 5, 6, -1, -1, 0, 7, 8, 9, 1, -1, -1, 2, 3, 4, 5, -1, -1, -1, -1, 6, 0, 7, 8, -1, -1, 9, 1, 2, 3, 4, -1, -1, 5, 6, 7, 8, 9, -1, -1, 1, 2, 3, 4, -1, -1, -1, 5, 6, 7, 8, 9, -1, -1, 1, 2, 3, 4, 5, -1, -1, 6, 7, -1, -1, -1, -1, -1, 8, 9, 1, 2, 3, -1, -1, 4, 5, 6, 7, 0, -1, -1, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, -1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 0, 9, -1, -1, 1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, -1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, 2, 3, 4, 5, 6, -1, -1, 7, 8, 9, 1, 2, -1, -1, 3, 4, 0, 5, 6, -1, -1, 7, 8, 9, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 2, 3, -1, -1, 4, 5, 6, 7, 8, -1, -1, 9, 1, 2, 3, 4, -1, -1, 5, 6, 7, 8, -1, -1, -1, 9, 1, 2, 3, 4, -1, -1, 5, 6, 7, 8, 9, -1, -1, 1, 2, 0, 0, 0};
@@ -166,7 +165,7 @@ static NSMutableArray *scheduleArray;
         return [UIColor colorFromDictionary:periodData[kColor]];
     }
     else if ([periodData[kIsFree] boolValue]){
-        return [UIColor paleColor:[defaultColors objectAtIndex:[periodData[kBlock] integerValue]] withFactor:paleFactor];
+        return [UIColor paleColor:[defaultColors objectAtIndex:[periodData[kBlock] integerValue]] withFactor:[[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Pale Factor"] integerValue]];
     }
     else {
         return [defaultColors objectAtIndex:[periodData[kBlock] integerValue]];

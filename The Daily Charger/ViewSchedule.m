@@ -7,9 +7,8 @@
 #import "DayView.h"
 #import "SWRevealViewController.h"
 #import "CustomMethods.h"
-#import "IntegerLibrary.h"
 #import "GetSchedule.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 
 NSInteger viewCurPage;
 NSInteger viewOldPage=0;
@@ -77,6 +76,7 @@ BOOL allowScroll = YES;
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0.0f;
         UIViewController *newPageView;
+        NSInteger padding = [[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Padding"] integerValue];
         if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
             newPageView = [[DayView alloc] initWithIndex:[CustomMethods getCycleDayForIndex:[self getAdjustedIndex:page]] dayIndex:page height:self.view.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - self.navigationController.navigationBar.frame.size.height - 2*padding parent:self];
         } else {
@@ -132,11 +132,12 @@ BOOL allowScroll = YES;
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateFormat:@"EEEE, M/d"]; //TODO: allow customizability of this (advanced)
 
-    NSDateComponents *firstDayComp = [[NSDateComponents alloc] init];
+    /*NSDateComponents *firstDayComp = [[NSDateComponents alloc] init];
     [firstDayComp setDay:intStartDay];
     [firstDayComp setMonth:intStartMonth];
     [firstDayComp setYear:intStartYear];
-    self.firstDate = [[NSCalendar currentCalendar] dateFromComponents:firstDayComp];
+    self.firstDate = [[NSCalendar currentCalendar] dateFromComponents:firstDayComp];*/
+    self.firstDate=[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"YearlyChanges" ofType:@"plist"]][@"Start Date"];
     NSDateComponents *daysBetween = [[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian] components:NSCalendarUnitDay
                                                                                                                      fromDate:self.firstDate
                                                                                                                        toDate:[NSDate date]

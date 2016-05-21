@@ -5,7 +5,6 @@
 
 #import "ShowTextViewController.h"
 #import "SWRevealViewController.h"
-#import "StringLibrary.h"
 
 @interface ShowTextViewController()
 - (NSString *)getTextWithTag:(int)tag;
@@ -59,15 +58,15 @@
 - (NSString *)getTextWithTag:(int)tag{
     switch (tag) {
         case 0: // Help
-            return helpText;
+            return [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Help Text"];
             break;
         case 1: // About
-            return aboutText;
+            return [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"About Text"];
             break;
         case 2: // Feedback (temporary - TODO: remove)
-            if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
-                return feedbackText;
-            return feedbackText;
+            //if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
+              //  return [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Feedback Text"];
+            return [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Feedback Text"];
             break;
         default:
             return @"Error: Text failed to load";

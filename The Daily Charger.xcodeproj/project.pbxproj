@@ -42,6 +42,8 @@
 		C781EBF71B75A57A008862A9 /* FCBrightDarkGradView.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBF01B75A57A008862A9 /* FCBrightDarkGradView.m */; };
 		C781EBF81B75A57A008862A9 /* FCColorSwatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBF21B75A57A008862A9 /* FCColorSwatchView.m */; };
 		C781EBF91B75A57A008862A9 /* colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = C781EBF41B75A57A008862A9 /* colormap.png */; };
+		C7C9F02B1CF0F4B1005B2F31 /* YearlyChanges.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7C9F02A1CF0F4B1005B2F31 /* YearlyChanges.plist */; };
+		C7C9F02D1CF0F88D005B2F31 /* Constants.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7C9F02C1CF0F88D005B2F31 /* Constants.plist */; };
 		C7FF99311B75B19000FA655E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FF99301B75B19000FA655E /* UIKit.framework */; };
 		C7FF99421B75BD8900FA655E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FF99411B75BD8900FA655E /* Foundation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C7FF99441B75BD9F00FA655E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7FF99431B75BD9F00FA655E /* CoreGraphics.framework */; };
@@ -90,7 +92,6 @@
 		C781EBC41B758EBF008862A9 /* GetSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetSchedule.h; sourceTree = "<group>"; };
 		C781EBC51B758EBF008862A9 /* GetSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetSchedule.m; sourceTree = "<group>"; };
 		C781EBC61B758EBF008862A9 /* GetSchedule.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetSchedule.xib; sourceTree = "<group>"; };
-		C781EBC91B758ECA008862A9 /* IntegerLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerLibrary.h; sourceTree = "<group>"; };
 		C781EBCA1B758ED4008862A9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C781EBCC1B758EDD008862A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C781EBCE1B758EEC008862A9 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
@@ -103,7 +104,7 @@
 		C781EBDB1B758F08008862A9 /* ShowTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowTextViewController.m; sourceTree = "<group>"; };
 		C781EBDD1B758F14008862A9 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidebarViewController.h; sourceTree = "<group>"; };
 		C781EBDE1B758F14008862A9 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidebarViewController.m; sourceTree = "<group>"; };
-		C781EBDF1B758F14008862A9 /* StringLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLibrary.h; sourceTree = "<group>"; };
+		C781EBDF1B758F14008862A9 /* KeyDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyDefinitions.h; sourceTree = "<group>"; };
 		C781EBE01B758F14008862A9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C781EBE11B758F14008862A9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		C781EBE41B758F1B008862A9 /* UIColor+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
@@ -118,6 +119,8 @@
 		C781EBF11B75A57A008862A9 /* FCColorSwatchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCColorSwatchView.h; sourceTree = "<group>"; };
 		C781EBF21B75A57A008862A9 /* FCColorSwatchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCColorSwatchView.m; sourceTree = "<group>"; };
 		C781EBF41B75A57A008862A9 /* colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colormap.png; sourceTree = "<group>"; };
+		C7C9F02A1CF0F4B1005B2F31 /* YearlyChanges.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YearlyChanges.plist; sourceTree = "<group>"; };
+		C7C9F02C1CF0F88D005B2F31 /* Constants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Constants.plist; sourceTree = "<group>"; };
 		C7FF99301B75B19000FA655E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C7FF99411B75BD8900FA655E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7FF99431B75BD9F00FA655E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,8 +176,9 @@
 				C781EBD91B758EFC008862A9 /* Show Text */,
 				C781EBB71B758E72008862A9 /* CustomMethods.h */,
 				C781EBB81B758E72008862A9 /* CustomMethods.m */,
-				C781EBDF1B758F14008862A9 /* StringLibrary.h */,
-				C781EBC91B758ECA008862A9 /* IntegerLibrary.h */,
+				C781EBDF1B758F14008862A9 /* KeyDefinitions.h */,
+				C7C9F02C1CF0F88D005B2F31 /* Constants.plist */,
+				C7C9F02A1CF0F4B1005B2F31 /* YearlyChanges.plist */,
 				C781EBE41B758F1B008862A9 /* UIColor+Custom.h */,
 				C781EBE51B758F1B008862A9 /* UIColor+Custom.m */,
 				C781EBDD1B758F14008862A9 /* SidebarViewController.h */,
@@ -404,7 +408,9 @@
 				C7270A8D1B7573B1002319B6 /* LaunchScreen.xib in Resources */,
 				C73A4C1E1B9E939F005591F0 /* PeriodNotes.xib in Resources */,
 				C781EBF91B75A57A008862A9 /* colormap.png in Resources */,
+				C7C9F02D1CF0F88D005B2F31 /* Constants.plist in Resources */,
 				C781EBB11B758E62008862A9 /* EditBlock.xib in Resources */,
+				C7C9F02B1CF0F4B1005B2F31 /* YearlyChanges.plist in Resources */,
 				C781EBC81B758EBF008862A9 /* GetSchedule.xib in Resources */,
 				C781EBD11B758EEC008862A9 /* menu.png in Resources */,
 				C781EBF61B75A57A008862A9 /* FCColorPickerViewController.xib in Resources */,

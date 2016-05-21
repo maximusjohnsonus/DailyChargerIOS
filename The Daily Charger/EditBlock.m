@@ -5,7 +5,7 @@
 
 #import "EditBlock.h"
 #import "EditSchedule.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 #import "CustomMethods.h"
 #import "UIColor+Custom.h"
 

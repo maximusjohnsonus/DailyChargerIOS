@@ -2,12 +2,9 @@
 //  Settings.m
 //  The Daily Charger
 //
-//  Created by Miranda Durham on 9/7/15.
-//  Copyright (c) 2015 dOOP. All rights reserved.
-//
 
 #import "Settings.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 #import "SWRevealViewController.h"
 #import "CustomMethods.h"
 

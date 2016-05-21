@@ -6,7 +6,7 @@
 
 #import "PeriodNotes.h"
 #import "CustomMethods.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 
 @interface PeriodNotes ()
 

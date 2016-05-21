@@ -7,8 +7,7 @@
 #import "EditDay.h"
 #import "SWRevealViewController.h"
 #import "CustomMethods.h"
-#import "IntegerLibrary.h"
-#import "StringLibrary.h"
+//#import "KeyDefinitions.h"
 #import "GetSchedule.h"
 
 NSInteger editCurPage=0;
@@ -64,7 +63,7 @@ BOOL editAllowScroll=YES;
         CGRect frame = self.view.frame;
         frame.origin.x = frame.size.width * page;
         frame.origin.y = 0.0f;
-        
+        NSInteger padding = [[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Padding"] integerValue];
         if(page==11){
             newPageView = [[GetSchedule alloc] initWithEditParent:self];
             newPageView.view.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);

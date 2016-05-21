@@ -5,7 +5,7 @@
 
 #import "GetSchedule.h"
 #import "CustomMethods.h"
-#import "StringLibrary.h"
+#import "KeyDefinitions.h"
 
 @interface GetSchedule ()
 @property ViewSchedule *viewParent;
