@@ -15,6 +15,7 @@
 		C73A4C1D1B9E939F005591F0 /* PeriodNotes.m in Sources */ = {isa = PBXBuildFile; fileRef = C73A4C1B1B9E939F005591F0 /* PeriodNotes.m */; };
 		C73A4C1E1B9E939F005591F0 /* PeriodNotes.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73A4C1C1B9E939F005591F0 /* PeriodNotes.xib */; };
 		C75309BD1B9171E80034F980 /* EditPeriodForSix.xib in Resources */ = {isa = PBXBuildFile; fileRef = C75309BC1B9171E80034F980 /* EditPeriodForSix.xib */; };
+		C76928211D58E91600198ED7 /* DefaultPreferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = C76928201D58E91600198ED7 /* DefaultPreferences.plist */; };
 		C781EBB11B758E62008862A9 /* EditBlock.xib in Resources */ = {isa = PBXBuildFile; fileRef = C781EBA71B758E62008862A9 /* EditBlock.xib */; };
 		C781EBB21B758E62008862A9 /* EditBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBA91B758E62008862A9 /* EditBlock.m */; };
 		C781EBB31B758E62008862A9 /* EditDay.m in Sources */ = {isa = PBXBuildFile; fileRef = C781EBAB1B758E62008862A9 /* EditDay.m */; };
@@ -75,6 +76,7 @@
 		C73A4C1B1B9E939F005591F0 /* PeriodNotes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriodNotes.m; sourceTree = "<group>"; };
 		C73A4C1C1B9E939F005591F0 /* PeriodNotes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PeriodNotes.xib; sourceTree = "<group>"; };
 		C75309BC1B9171E80034F980 /* EditPeriodForSix.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditPeriodForSix.xib; sourceTree = "<group>"; };
+		C76928201D58E91600198ED7 /* DefaultPreferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultPreferences.plist; sourceTree = "<group>"; };
 		C781EBA71B758E62008862A9 /* EditBlock.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditBlock.xib; sourceTree = "<group>"; };
 		C781EBA81B758E62008862A9 /* EditBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditBlock.h; sourceTree = "<group>"; };
 		C781EBA91B758E62008862A9 /* EditBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditBlock.m; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				C7270A7B1B7573B0002319B6 /* The Daily Charger */,
+				C7270A8B1B7573B1002319B6 /* LaunchScreen.xib */,
 				C7270A951B7573B1002319B6 /* The Daily ChargerTests */,
 				C781EBFA1B75AE5B008862A9 /* Frameworks */,
 				C7270A7A1B7573B0002319B6 /* Products */,
@@ -179,6 +182,7 @@
 				C781EBDF1B758F14008862A9 /* KeyDefinitions.h */,
 				C7C9F02C1CF0F88D005B2F31 /* Constants.plist */,
 				C7C9F02A1CF0F4B1005B2F31 /* YearlyChanges.plist */,
+				C76928201D58E91600198ED7 /* DefaultPreferences.plist */,
 				C781EBE41B758F1B008862A9 /* UIColor+Custom.h */,
 				C781EBE51B758F1B008862A9 /* UIColor+Custom.m */,
 				C781EBDD1B758F14008862A9 /* SidebarViewController.h */,
@@ -189,7 +193,6 @@
 				C7270A811B7573B1002319B6 /* AppDelegate.m */,
 				C781EBCC1B758EDD008862A9 /* Main.storyboard */,
 				C7270A891B7573B1002319B6 /* Images.xcassets */,
-				C7270A8B1B7573B1002319B6 /* LaunchScreen.xib */,
 				C7270A7C1B7573B0002319B6 /* Supporting Files */,
 			);
 			path = "The Daily Charger";
@@ -370,7 +373,7 @@
 				TargetAttributes = {
 					C7270A781B7573AF002319B6 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 2X7X4A88N4;
+						DevelopmentTeam = D4GXMA23TT;
 					};
 					C7270A911B7573B1002319B6 = {
 						CreatedOnToolsVersion = 6.4;
@@ -403,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C781EBD21B758EEC008862A9 /* menu@2x.png in Resources */,
+				C76928211D58E91600198ED7 /* DefaultPreferences.plist in Resources */,
 				C781EBB51B758E62008862A9 /* EditPeriod.xib in Resources */,
 				C781EBD81B758EF7008862A9 /* PeriodTableCell.xib in Resources */,
 				C7270A8D1B7573B1002319B6 /* LaunchScreen.xib in Resources */,
@@ -483,6 +487,7 @@
 				C7270A8C1B7573B1002319B6 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = "The Daily Charger";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

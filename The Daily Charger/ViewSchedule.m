@@ -12,7 +12,7 @@
 
 NSInteger viewCurPage;
 NSInteger viewOldPage=0;
-const int viewNumPages = 275;
+NSInteger viewNumPages;
 BOOL allowScroll = YES;
 
 @interface ViewSchedule ()
@@ -52,7 +52,6 @@ BOOL allowScroll = YES;
     NSString *dayString = (cycleDay>=0 ? [NSString stringWithFormat:@", Day %ld",(long)cycleDay] : @", No School");
     if(allowScroll)
         self.title = [NSString stringWithFormat:@"%@%@",[self.dateFormatter stringFromDate:[self getDateForPage:adjustedCurPage]], dayString];
-
 }
 - (void)showVisiblePages {
     for (NSInteger i=viewCurPage-1; i<=viewCurPage+1; i++) {
@@ -62,8 +61,8 @@ BOOL allowScroll = YES;
 
 - (void)loadPage:(NSInteger)page
 {
-    NSInteger adjustedPage = [self getAdjustedIndex:page];
-    if (page < 0 || adjustedPage >= viewNumPages) {
+    //NSInteger adjustedPage = [self getAdjustedIndex:page];
+    if (page < 0 || page >= viewNumPages) {
         // If it's outside the range of what we have to display, then do nothing
         return;
     }
@@ -90,8 +89,9 @@ BOOL allowScroll = YES;
 }
 - (void)showPage:(NSInteger)page{
     UIViewController *newPageView = [self.controllers objectAtIndex:page];
-    if(newPageView)
+    if(newPageView){
         [self.scrollView addSubview:newPageView.view];
+    }
 }
 
 - (void)purgePage:(NSInteger)page {
@@ -111,24 +111,12 @@ BOOL allowScroll = YES;
 
 
 #pragma mark -
-- (void)loadView{
-    [super loadView];
-    NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
-    //if([[[def dictionaryRepresentation] allKeys] containsObject:KEY_NOTES]){
-    //[def removeObjectForKey:KEY_NOTES];
-    if ([def objectForKey:KEY_NOTES]==nil){ //if notes are new for them
-        [def setBool:YES forKey:KEY_NOTES];
-        [def synchronize];
-        
-        UIAlertView *notesAlert=[[UIAlertView alloc]initWithTitle:@"We've added Notes" message:@"Tap on a period! Read more in Help." delegate:self cancelButtonTitle:@"Close" otherButtonTitles:nil];
-        [notesAlert show];
-    }
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.title = @"View Schedule";
-    
+
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateFormat:@"EEEE, M/d"]; //TODO: allow customizability of this (advanced)
 
@@ -138,19 +126,26 @@ BOOL allowScroll = YES;
     [firstDayComp setYear:intStartYear];
     self.firstDate = [[NSCalendar currentCalendar] dateFromComponents:firstDayComp];*/
     self.firstDate=[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"YearlyChanges" ofType:@"plist"]][@"Start Date"];
+
     NSDateComponents *daysBetween = [[[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian] components:NSCalendarUnitDay
                                                                                                                      fromDate:self.firstDate
                                                                                                                        toDate:[NSDate date]
                                                                                                                       options:0 ];
-    
     //Make sure nothing loads until viewDidAppear (it works)
+    viewNumPages = [self getDeadjustedIndex: [[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"YearlyChanges" ofType:@"plist"]][@"Cycle Days"] count]];
     viewCurPage = [self getDeadjustedIndex:[daysBetween day]];
+    if(viewCurPage>=viewNumPages){
+        viewCurPage=viewNumPages-1;
+        UIAlertView *updateAlert=[[UIAlertView alloc]initWithTitle:@"The End" message:@"Update next year for more exciting scheduling fun!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [updateAlert show];
+
+    }
     viewOldPage = viewCurPage;
     //[self loadVisiblePages];
-    
+
     // Scroll to starting page
     [self.scrollView setContentOffset:CGPointMake(viewCurPage * self.view.frame.size.width, 0)];
-    
+
     //Set up side bar
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
@@ -163,6 +158,8 @@ BOOL allowScroll = YES;
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+
+    NSMutableArray *schedule = [CustomMethods getSchedule];
     
     // Set up the array to hold the views for each page
     self.controllers = [[NSMutableArray alloc] init]; //TODO: change from array to 3 variables?
@@ -174,14 +171,20 @@ BOOL allowScroll = YES;
     CGSize pagesScrollViewSize = self.view.frame.size;
     self.scrollView.contentSize = CGSizeMake(pagesScrollViewSize.width * viewNumPages, pagesScrollViewSize.height);
 
-    NSMutableArray *schedule = [CustomMethods getSchedule];
     if(schedule==nil){
         [self lockAndLoad];
     } else {
         allowScroll = YES;
         [DayView setSchedule: schedule];
+        NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        if ([def objectForKey:KEY_RET]==nil){ //if returning user and needs new template
+            [def setBool:YES forKey:KEY_RET];
+            [def synchronize];
+            
+            UIAlertView *returningAlert=[[UIAlertView alloc]initWithTitle:@"Returning User?" message:@"Swipe to the last page in Edit Schedule to choose a new template." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [returningAlert show];
+        }
     }
-
 }
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
@@ -212,7 +215,6 @@ BOOL allowScroll = YES;
     [self.controllers replaceObjectAtIndex:0 withObject:[NSNull null]];
     [self viewWillAppear:YES];
     [self loadVisiblePages];
-
 }
 
 /*- (void)viewDidDisappear:(BOOL)animated{
@@ -259,8 +261,9 @@ BOOL allowScroll = YES;
 }
 
 - (NSInteger)getAdjustedIndex:(NSInteger)index{ //TODO: replace with math instead of for loop
-    if([CustomMethods showWeekends])
+    if([CustomMethods showWeekends]){
         return index;
+    }
     int realIndex=0;
     int i=0;
     NSCalendar *cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -275,14 +278,12 @@ BOOL allowScroll = YES;
         if(weekday!=1 && weekday!=7)
             i++;
     }
-
     return realIndex;
-    
 }
 - (NSInteger)getDeadjustedIndex:(NSInteger)index{ //TODO: replace with math instead of for loop
-
-    if([CustomMethods showWeekends])
+    if([CustomMethods showWeekends]){
         return index;
+    }
     int realIndex=0;
     
     NSCalendar *cal = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -298,7 +299,6 @@ BOOL allowScroll = YES;
         tempDate = [cal dateByAddingComponents:oneDay toDate:tempDate options:0];
     }
     return realIndex;
-    
 }
 
 

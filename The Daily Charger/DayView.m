@@ -85,8 +85,6 @@ static NSMutableArray *scheduleArray;
         [(UITableView *)self.view reloadData];
 }
 - (void) refreshIndex:(NSIndexPath *)index withNewNote:(NSString *)note{
-
-    
     NSMutableDictionary *notes = [CustomMethods getNotesForDay:self.dayIndex];
     if(notes==nil){
         notes = [[NSMutableDictionary alloc] init];

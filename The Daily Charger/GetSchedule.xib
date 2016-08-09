@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetSchedule">
@@ -21,6 +21,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXn-Vv-M2Z">
                     <rect key="frame" x="209" y="126" width="182" height="36"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.81159248740000001" green="0.81159248740000001" blue="0.81159248740000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="5X4-zf-DC5"/>
@@ -40,6 +41,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svW-p9-PVG">
                     <rect key="frame" x="209" y="180" width="182" height="36"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.81159248740000001" green="0.81159248740000001" blue="0.81159248740000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="182" id="Wxt-SG-Mb2"/>
@@ -59,6 +61,7 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCF-q5-FNY">
                     <rect key="frame" x="199" y="18" width="202" height="36"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.81159248737373735" green="0.81159248737373735" blue="0.81159248737373735" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="DCe-z8-udz"/>
@@ -66,7 +69,7 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="USE 10-12 TEMPLATE"/>
+                    <state key="normal" title="USE 10-12 D1 TEMPLATE"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="4"/>
@@ -77,15 +80,16 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDM-zU-jNf">
-                    <rect key="frame" x="179" y="72" width="243" height="36"/>
+                    <rect key="frame" x="194" y="72" width="213" height="36"/>
+                    <animations/>
                     <color key="backgroundColor" red="0.81159248740000001" green="0.81159248740000001" blue="0.81159248740000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="5Xe-sx-j1g"/>
-                        <constraint firstAttribute="width" constant="243" id="bJI-vV-Hvl"/>
+                        <constraint firstAttribute="width" constant="213" id="bJI-vV-Hvl"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                    <state key="normal" title="USE 10-12 OFFSET LUNCH*"/>
+                    <state key="normal" title="USE 10-12 D2 TEMPLATE*"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="4"/>
@@ -97,15 +101,17 @@
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="nh6-3F-6wX">
                     <rect key="frame" x="8" y="224" width="584" height="125"/>
+                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="125" id="aL1-TD-Izu"/>
                     </constraints>
-                    <string key="text">*The offset lunch template has a break between 3rd and 4th period on some days, and lunch before the 4th class period on the others.</string>
+                    <string key="text">*The D2 template has D2 as the fourth block, a short break between C and D2 blocks on some days, and lunch before D2 on the others.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="yDM-zU-jNf" secondAttribute="centerX" id="2ID-Rf-fWz"/>
