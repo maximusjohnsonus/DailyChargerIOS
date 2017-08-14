@@ -7,8 +7,6 @@
 #import "KeyDefinitions.h"
 #import "UIColor+Custom.h"
 
-//int cycleDays[] = {0, 1, -1, -1, 2, 3, 4, 5, 0, -1, -1, 6, 7, 8, 9, 1, -1, -1, -1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, 2, 3, 4, 5, 6, -1, -1, 0, 7, 8, 9, 1, -1, -1, 2, 3, 4, 5, -1, -1, -1, -1, 6, 0, 7, 8, -1, -1, 9, 1, 2, 3, 4, -1, -1, 5, 6, 7, 8, 9, -1, -1, 1, 2, 3, 4, -1, -1, -1, 5, 6, 7, 8, 9, -1, -1, 1, 2, 3, 4, 5, -1, -1, 6, 7, -1, -1, -1, -1, -1, 8, 9, 1, 2, 3, -1, -1, 4, 5, 6, 7, 0, -1, -1, 0, 0, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, -1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 0, 9, -1, -1, 1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, -1, 2, 3, 4, 5, -1, -1, 6, 7, 8, 9, 1, -1, -1, 2, 3, 4, 5, 6, -1, -1, 7, 8, 9, 1, 2, -1, -1, 3, 4, 0, 5, 6, -1, -1, 7, 8, 9, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 2, 3, -1, -1, 4, 5, 6, 7, 8, -1, -1, 9, 1, 2, 3, 4, -1, -1, 5, 6, 7, 8, -1, -1, -1, 9, 1, 2, 3, 4, -1, -1, 5, 6, 7, 8, 9, -1, -1, 1, 2, 0, 0, 0};
-
 static NSMutableArray *scheduleArray;
 
 @implementation CustomMethods{
@@ -112,8 +110,6 @@ static NSMutableArray *scheduleArray;
         NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"note%d",index]];
          //TODO: change this part maybe
         [fileManager removeItemAtPath:filePath error:NULL];
-        
-        
     }
 }
 + (void) updateNoteTo:(NSString *)newNote forPath:(NSIndexPath *)index{
@@ -128,6 +124,27 @@ static NSMutableArray *scheduleArray;
     //[dict isKindOfClass:[NSNull class]];
 
     [CustomMethods saveNotes:notes forDay:index.section];
+}
++ (void) deleteNotes{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSError *error;
+    
+    NSArray<NSString*> *files = [fileManager contentsOfDirectoryAtPath:documentsDirectory error:&error];
+    if (error) {
+        //NSLog(@"Could not get contents of documents directory -:%@ ",[error localizedDescription]);
+        return;
+    }
+
+    for (NSString *file in files) {
+        if([[file substringToIndex:4] isEqualToString:@"note"]){
+            BOOL success = [fileManager removeItemAtPath:[documentsDirectory stringByAppendingPathComponent:file] error:&error];
+            if (!success || error) {
+                //NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+            }
+        }
+    }
 }
 
 

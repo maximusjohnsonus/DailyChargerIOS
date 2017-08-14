@@ -226,13 +226,13 @@
                                   @8, kBlock,
                                   @YES, kIsFree, nil];
     NSMutableDictionary *Advisor = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                    @"Common Time", kClassName,
-                                    @645, kStart,
+                                    @"Advisor Time", kClassName,
+                                    @642, kStart,
                                     @675, kEnd,
                                     @8, kBlock,
                                     @NO, kIsFree, nil];
     NSMutableDictionary *DivAss = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                   @"Common Time", kClassName,
+                                   @"Assembly/Class Meeting", kClassName,
                                    @645, kStart,
                                    @675, kEnd,
                                    @8, kBlock,
@@ -267,6 +267,8 @@
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DLong1 mutableCopy],  [Lunch8 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Advisor mutableCopy],  [DShort2 mutableCopy],  [Lunch1 mutableCopy],  [ELong2 mutableCopy],  [GLong mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DShort1 mutableCopy],  [Lunch4 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil], nil]];
+    
+    [CustomMethods deleteNotes];
     
 
     if(self.viewParent)
@@ -448,13 +450,13 @@
                                   @8, kBlock,
                                   @YES, kIsFree, nil];
     NSMutableDictionary *Advisor = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                    @"Common Time", kClassName,
-                                    @645, kStart,
+                                    @"Advisor Time", kClassName,
+                                    @642, kStart,
                                     @675, kEnd,
                                     @8, kBlock,
                                     @NO, kIsFree, nil];
     NSMutableDictionary *DivAss = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                   @"Common Time", kClassName,
+                                   @"Assembly/Class Meeting", kClassName,
                                    @645, kStart,
                                    @675, kEnd,
                                    @8, kBlock,
@@ -490,6 +492,7 @@
       [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Advisor mutableCopy],  [Lunch1 mutableCopy],  [DShort2 mutableCopy],  [ELong2 mutableCopy],  [GLong mutableCopy], nil],
       [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DShort0 mutableCopy],  [Lunch0 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil], nil]];
     
+    [CustomMethods deleteNotes];
     
     if(self.viewParent)
         [self.viewParent unlock];
@@ -627,7 +630,7 @@
                                   @NO, kIsFree, nil];
     
     NSMutableDictionary *Advisor = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                    @"Advisory Time", kClassName,
+                                    @"Advisor Time", kClassName,
                                     @689, kStart,
                                     @716, kEnd,
                                     @8, kBlock,
@@ -687,6 +690,8 @@
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Lunch mutableCopy],  [Assembly mutableCopy],  [DShort2 mutableCopy],  [ELong2 mutableCopy],  [OtherFree mutableCopy],  [AdvisorStudy mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Lunch mutableCopy],  [CommonTime0 mutableCopy],  [DShort2 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil], nil]];
     
+    [CustomMethods deleteNotes];
+
     if(self.viewParent)
         [self.viewParent unlock];
     else if(self.editParent)
@@ -757,6 +762,8 @@
                                          @0, kBlock,
                                          @YES, kIsFree, nil], nil], nil]];
     
+    [CustomMethods deleteNotes];
+
     if(self.viewParent)
         [self.viewParent unlock];
     else if(self.editParent)

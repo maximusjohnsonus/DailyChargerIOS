@@ -10,6 +10,7 @@
 + (void) saveSchedule:(NSMutableArray *)newSchedule;
 + (NSMutableDictionary *) getNotesForDay:(NSInteger)index;
 + (void) updateNoteTo:(NSString *)newNote forPath:(NSIndexPath *)index;
++ (void) deleteNotes;
 + (NSString *)intToTimeString:(NSInteger)time;
 + (BOOL) use24HourTime;
 + (BOOL) enableNotes;
