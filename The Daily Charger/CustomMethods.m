@@ -67,7 +67,7 @@ static NSMutableArray *scheduleArray;
     NSError *error;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *appFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"note%d",index]];
+    NSString *appFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"note%ld",(long)index]];
     NSData *readData = [NSData dataWithContentsOfFile:appFile options:0 error:&error];
     if(readData == nil){
         //NSLog(@"note data failed to read: for index %d", index);//error);
@@ -96,7 +96,7 @@ static NSMutableArray *scheduleArray;
         }
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentsDirectory = [paths objectAtIndex:0];
-        NSString *appFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"note%d",index]];
+        NSString *appFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"note%ld",(long)index]];
         if(! [writeData writeToFile:appFile options:0 error:&error]){
             //NSLog(@"error saving notes data: %@", error);
             return;
@@ -107,7 +107,7 @@ static NSMutableArray *scheduleArray;
         NSFileManager *fileManager = [NSFileManager defaultManager];
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentsPath = [paths objectAtIndex:0];
-        NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"note%d",index]];
+        NSString *filePath = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"note%ld",(long)index]];
          //TODO: change this part maybe
         [fileManager removeItemAtPath:filePath error:NULL];
     }
@@ -118,9 +118,9 @@ static NSMutableArray *scheduleArray;
         notes = [[NSMutableDictionary alloc] init];
     }
     if(newNote==nil || [newNote isEqualToString:@""]){ //|| [newNote isEqualToString:placeHolderText]
-        [notes removeObjectForKey:[NSString stringWithFormat:@"%d",index.row]]; //delete if note is empty
+        [notes removeObjectForKey:[NSString stringWithFormat:@"%ld",(long)index.row]]; //delete if note is empty
     } else
-        [notes setObject:newNote forKey:[NSString stringWithFormat:@"%d",index.row]]; //else update note
+        [notes setObject:newNote forKey:[NSString stringWithFormat:@"%ld",(long)index.row]]; //else update note
     //[dict isKindOfClass:[NSNull class]];
 
     [CustomMethods saveNotes:notes forDay:index.section];

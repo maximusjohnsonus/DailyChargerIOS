@@ -24,6 +24,7 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    [super awakeFromNib];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -76,7 +77,7 @@
     //if(self.ClassNameLabel==nil)
         self.ClassNameLabel = [[UILabel alloc] init];
 
-    CGSize expectedLabelSize = [[self getMainText] sizeWithFont:[UIFont systemFontOfSize:13]];
+    CGSize expectedLabelSize = [[self getMainText] sizeWithAttributes:@{ NSFontAttributeName : [UIFont systemFontOfSize:13] } ];
     NSInteger leftBuffer = 75; //good amount to avoid overlap with time label
 //    if(expectedLabelSize.width<self.frame.size.width - 2*padding - 2*leftBuffer){ //if label will be small enough to center
     if(expectedLabelSize.width/2+leftBuffer<self.frame.size.width/2){ //if label will be small enough to center

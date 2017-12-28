@@ -90,9 +90,9 @@ static NSMutableArray *scheduleArray;
         notes = [[NSMutableDictionary alloc] init];
     }
     if(note==nil || [note isEqualToString:@""]){
-        [notes removeObjectForKey:[NSString stringWithFormat:@"%d",index.row]]; //delete if note is empty
+        [notes removeObjectForKey:[NSString stringWithFormat:@"%ld",(long)index.row]]; //delete if note is empty
     } else
-        [notes setObject:note forKey:[NSString stringWithFormat:@"%d",index.row]]; //else update note
+        [notes setObject:note forKey:[NSString stringWithFormat:@"%ld",(long)index.row]]; //else update note
     
     self.notes = notes; //now dayView has the same notes for today as customMethods, but they're independent
     //[(UITableView *)self.view reloadData];
@@ -117,7 +117,7 @@ static NSMutableArray *scheduleArray;
     }
     
     //NSString *text = [[CustomMethods getNotesForDay:indexPath.section] valueForKey:[NSString stringWithFormat:@"%d",indexPath.row]];
-    [cell setPeriodData:scheduleArray[self.index][indexPath.row] index:[NSIndexPath indexPathForRow:indexPath.row inSection:self.index] dayIndex:self.dayIndex notes:[self.notes valueForKey:[NSString stringWithFormat:@"%d",indexPath.row]]];
+    [cell setPeriodData:scheduleArray[self.index][indexPath.row] index:[NSIndexPath indexPathForRow:indexPath.row inSection:self.index] dayIndex:self.dayIndex notes:[self.notes valueForKey:[NSString stringWithFormat:@"%ld",(long)indexPath.row]]];
      //[[CustomMethods getNotesForDay:self.dayIndex] valueForKey:[NSString stringWithFormat:@"%d",indexPath.row]]];
     
     /*PeriodData *period = [[PeriodData alloc] initWithDictionary:[self.myDay objectAtIndex:indexPath.row]];
