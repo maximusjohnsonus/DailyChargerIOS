@@ -76,12 +76,14 @@ BOOL allowScroll = YES;
         frame.origin.y = 0.0f;
         UIViewController *newPageView;
         NSInteger padding = [[[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Constants" ofType:@"plist"]][@"Padding"] integerValue];
-        if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-            newPageView = [[DayView alloc] initWithIndex:[CustomMethods getCycleDayForIndex:[self getAdjustedIndex:page]] dayIndex:page height:self.view.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - self.navigationController.navigationBar.frame.size.height - 2*padding parent:self];
+        NSInteger height;
+        if(@available(iOS 11.0,*)){ // if we're on iPhone X, use safe areas instead
+            height = self.view.safeAreaLayoutGuide.layoutFrame.size.height - 2*padding;
         } else {
-            newPageView = [[DayView alloc] initWithIndex:[CustomMethods getCycleDayForIndex:[self getAdjustedIndex:page]] dayIndex:page height:self.view.frame.size.height - 2*padding parent:self];
+            height = self.view.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - self.navigationController.navigationBar.frame.size.height - 2*padding;
         }
-        //newPageView.view.contentMode = UIViewContentModeScaleAspectFit;
+        newPageView = [[DayView alloc] initWithIndex:[CustomMethods getCycleDayForIndex:[self getAdjustedIndex:page]] dayIndex:page height:height parent:self];
+
         newPageView.view.frame = CGRectMake(frame.origin.x + padding, frame.origin.y +padding, frame.size.width - 2*padding, frame.size.height - 2*padding);
         [self.controllers replaceObjectAtIndex:page withObject:newPageView];        
         [self.scrollView addSubview:newPageView.view];
@@ -197,13 +199,14 @@ BOOL allowScroll = YES;
     allowScroll = NO;
     viewCurPage = 0;
     self.title = @"Make a new schedule";
-    CGRect frame = self.view.frame; //TODO: make this a modal view
-    frame.origin.x = 0.0f;
-    frame.origin.y = 0.0f;
+    CGRect frame = self.scrollView.frame; //TODO: make this a modal view
+    
     UIViewController *newPageView = [[GetSchedule alloc] initWithViewParent:self];
-    //newPageView.view.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
+    newPageView.view.frame = CGRectMake(0.0, 0.0, frame.size.width, frame.size.height);
     [self.controllers replaceObjectAtIndex:0 withObject:newPageView];
     [self.scrollView addSubview:newPageView.view];
+    [self.scrollView setContentOffset:CGPointMake(0.0, 0.0)];
+    
 }
 - (void) unlock{
     allowScroll = YES;

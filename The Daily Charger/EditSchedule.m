@@ -68,11 +68,14 @@ BOOL editAllowScroll=YES;
             newPageView = [[GetSchedule alloc] initWithEditParent:self];
             newPageView.view.frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
         } else {
-            if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
-                newPageView = [[EditDay alloc] initWithIndex:page-1 height:self.view.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - self.navigationController.navigationBar.frame.size.height - 2*padding parent:self];
+            NSInteger height;
+            if(@available(iOS 11.0,*)){ // if we're on iPhone X, use safe areas instead
+                height = self.view.safeAreaLayoutGuide.layoutFrame.size.height - 2*padding;
             } else {
-                newPageView = [[EditDay alloc] initWithIndex:page-1 height:self.view.frame.size.height - 2*padding parent:self];
+                height = self.view.frame.size.height - [UIApplication sharedApplication].statusBarFrame.size.height - self.navigationController.navigationBar.frame.size.height - 2*padding;
             }
+            newPageView = [[EditDay alloc] initWithIndex:page-1 height:height parent:self];
+
 
             //newPageView.view.contentMode = UIViewContentModeScaleAspectFit;
             newPageView.view.frame = CGRectMake(frame.origin.x + padding, frame.origin.y + padding, frame.size.width - 2*padding, frame.size.height - 2*padding);
