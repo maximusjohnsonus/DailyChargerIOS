@@ -36,63 +36,21 @@
 		<integer>1</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
+		<integer>0</integer>
 		<integer>2</integer>
 		<integer>3</integer>
 		<integer>4</integer>
 		<integer>5</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
 		<integer>6</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
 		<integer>7</integer>
 		<integer>8</integer>
 		<integer>9</integer>
 		<integer>1</integer>
-		<integer>2</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
 		<integer>0</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>0</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>1</integer>
 		<integer>2</integer>
 		<integer>3</integer>
 		<integer>4</integer>
@@ -101,49 +59,56 @@
 		<integer>-1</integer>
 		<integer>6</integer>
 		<integer>7</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>3</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>9</integer>
-		<integer>1</integer>
-		<integer>0</integer>
-		<integer>0</integer>
 		<integer>0</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>5</integer>
+		<integer>6</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>9</integer>
 		<integer>1</integer>
 		<integer>2</integer>
 		<integer>-1</integer>
@@ -155,87 +120,136 @@
 		<integer>7</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
-		<integer>-1</integer>
 		<integer>8</integer>
 		<integer>9</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>5</integer>
 		<integer>0</integer>
-		<integer>6</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>3</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>3</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>3</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>4</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>7</integer>
 		<integer>0</integer>
+		<integer>0</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>0</integer>
+		<integer>1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>0</integer>
+		<integer>1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>4</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>4</integer>
+		<integer>0</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>8</integer>
+		<integer>9</integer>
+		<integer>1</integer>
+		<integer>2</integer>
+		<integer>3</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>4</integer>
+		<integer>5</integer>
+		<integer>6</integer>
+		<integer>7</integer>
 		<integer>8</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
@@ -243,39 +257,25 @@
 		<integer>1</integer>
 		<integer>2</integer>
 		<integer>3</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
 		<integer>4</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
 		<integer>5</integer>
 		<integer>6</integer>
 		<integer>7</integer>
+		<integer>-1</integer>
+		<integer>-1</integer>
 		<integer>8</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
 		<integer>9</integer>
 		<integer>1</integer>
 		<integer>2</integer>
 		<integer>3</integer>
-		<integer>4</integer>
 		<integer>-1</integer>
 		<integer>-1</integer>
-		<integer>5</integer>
-		<integer>6</integer>
-		<integer>7</integer>
-		<integer>8</integer>
-		<integer>9</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>1</integer>
-		<integer>2</integer>
-		<integer>3</integer>
 		<integer>4</integer>
 		<integer>5</integer>
-		<integer>-1</integer>
-		<integer>-1</integer>
-		<integer>6</integer>
-		<integer>7</integer>
 		<integer>0</integer>
 		<integer>0</integer>
 		<integer>0</integer>
@@ -286,7 +286,7 @@
 		<integer>-1</integer>
 	</array>
 	<key>Start Date</key>
-	<date>2017-08-17T06:00:00Z</date>
+	<date>2018-08-16T06:00:00Z</date>
 	<key>Other</key>
 	<string>Make sure there are a few -1s at the end of Cycle Days (5 works). Also, increment the number in KEY_RET in KeyDefinitions.h. If the schedule has changed, update the default templates (10-12, 10-12 offset, and 8-9) in GetSchedule.m.</string>
 </dict>

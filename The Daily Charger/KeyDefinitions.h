@@ -16,7 +16,9 @@
 
 //Keys for saving
 #define kSchedule @"kSchedule"
-#define KEY_RET @"KEY_RET17"
 #define KEY_NOTES @"KEY_NOTES"
 #define KEY_WEEKEND @"KEY_WEEKEND"
 #define KEY_TIME24 @"KEY_TIME24"
+
+// Update the number in KEY_RET every year
+#define KEY_RET @"KEY_RET18"
