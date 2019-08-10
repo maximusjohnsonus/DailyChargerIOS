@@ -21,4 +21,4 @@
 #define KEY_TIME24 @"KEY_TIME24"
 
 // Update the number in KEY_RET every year
-#define KEY_RET @"KEY_RET18"
+#define KEY_RET @"KEY_RET19"

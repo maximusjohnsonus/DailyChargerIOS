@@ -384,7 +384,7 @@
 			};
 			buildConfigurationList = C7270A741B7573AF002319B6 /* Build configuration list for PBXProject "The Daily Charger" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,

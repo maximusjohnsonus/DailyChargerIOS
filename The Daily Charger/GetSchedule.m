@@ -206,12 +206,6 @@
                                    @770, kEnd,
                                    @7, kBlock,
                                    @NO, kIsFree, nil];
-    NSMutableDictionary *Lunch5 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                   @"Lunch", kClassName,
-                                   @706, kStart,
-                                   @743, kEnd,
-                                   @7, kBlock,
-                                   @NO, kIsFree, nil];
     NSMutableDictionary *Lunch8 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    @"Lunch", kClassName,
                                    @723, kStart,
@@ -219,12 +213,6 @@
                                    @7, kBlock,
                                    @NO, kIsFree, nil];
     
-    NSMutableDictionary *Break = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                  @"Break", kClassName,
-                                  @635, kStart,
-                                  @652, kEnd,
-                                  @8, kBlock,
-                                  @YES, kIsFree, nil];
     NSMutableDictionary *Advisor = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                     @"Advisor Time", kClassName,
                                     @642, kStart,
@@ -244,15 +232,15 @@
                                  @8, kBlock,
                                  @NO, kIsFree, nil];
     NSMutableDictionary *CommonTime = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       @"Common Time", kClassName,
+                                       @"Learning Seminar", kClassName,
                                        @885, kStart,
                                        @932, kEnd,
                                        @8, kBlock,
                                        @NO, kIsFree, nil];
     NSMutableDictionary *Other = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                  @"Other", kClassName,
-                                  @652, kStart,
-                                  @699, kEnd,
+                                  @"Common Time", kClassName,
+                                  @642, kStart,
+                                  @689, kEnd,
                                   @8, kBlock,
                                   @NO, kIsFree, nil];
     [CustomMethods saveSchedule:
@@ -261,7 +249,7 @@
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DShort1 mutableCopy],  [Lunch2 mutableCopy],  [EShort1 mutableCopy],  [FLong mutableCopy],  [GShort mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DivAss mutableCopy],  [DLong2 mutableCopy],  [Lunch3 mutableCopy],  [FShort1 mutableCopy],  [GLong mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [ALong mutableCopy],  [CLong mutableCopy],  [DShort1 mutableCopy],  [Lunch4 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
-     [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Break mutableCopy],  [Other mutableCopy],  [Lunch5 mutableCopy],  [ELong1 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
+     [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Other mutableCopy],  [Lunch2 mutableCopy],  [ELong1 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DShort1 mutableCopy],  [Lunch2 mutableCopy],  [EShort1 mutableCopy],  [FLong mutableCopy],  [CommonTime mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [BLong1 mutableCopy],  [CLong mutableCopy],  [Club mutableCopy],  [DShort2 mutableCopy],  [Lunch1 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DLong1 mutableCopy],  [Lunch8 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
@@ -430,6 +418,12 @@
                                    @770, kEnd,
                                    @7, kBlock,
                                    @NO, kIsFree, nil];
+    NSMutableDictionary *Lunch5 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                   @"Lunch", kClassName,
+                                   @696, kStart,
+                                   @743, kEnd,
+                                   @7, kBlock,
+                                   @NO, kIsFree, nil];
     NSMutableDictionary *Lunch8 = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                    @"Lunch", kClassName,
                                    @733, kStart,
@@ -468,15 +462,15 @@
                                  @8, kBlock,
                                  @NO, kIsFree, nil];
     NSMutableDictionary *CommonTime = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       @"Common Time", kClassName,
+                                       @"Learning Seminar", kClassName,
                                        @885, kStart,
                                        @932, kEnd,
                                        @8, kBlock,
                                        @NO, kIsFree, nil];
     NSMutableDictionary *Other = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                  @"Other", kClassName,
-                                  @652, kStart,
-                                  @699, kEnd,
+                                  @"Common Time", kClassName,
+                                  @642, kStart,
+                                  @689, kEnd,
                                   @8, kBlock,
                                   @NO, kIsFree, nil];
     [CustomMethods saveSchedule:
@@ -485,7 +479,7 @@
       [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Break mutableCopy],  [DShort1 mutableCopy],  [Lunch2 mutableCopy],  [EShort1 mutableCopy],  [FLong mutableCopy],  [GShort mutableCopy], nil],
       [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [DivAss mutableCopy],  [Lunch1 mutableCopy],  [DLong2 mutableCopy],  [FShort1 mutableCopy],  [GLong mutableCopy], nil],
       [NSMutableArray arrayWithObjects: [ALong mutableCopy],  [CLong mutableCopy],  [Break mutableCopy],  [DShort1 mutableCopy],  [Lunch4 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
-      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Break mutableCopy],  [Other mutableCopy],  [Lunch2 mutableCopy],  [ELong1 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
+      [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Other mutableCopy],  [Lunch5 mutableCopy],  [ELong1 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
       [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Break mutableCopy],  [DShort1 mutableCopy],  [Lunch2 mutableCopy],  [EShort1 mutableCopy],  [FLong mutableCopy],  [CommonTime mutableCopy], nil],
       [NSMutableArray arrayWithObjects: [BLong1 mutableCopy],  [CLong mutableCopy],  [Club mutableCopy],  [Lunch1 mutableCopy],  [DShort2 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
       [NSMutableArray arrayWithObjects: [AShort mutableCopy],  [BShort mutableCopy],  [CShort mutableCopy],  [Break mutableCopy],  [DLong1 mutableCopy],  [Lunch8 mutableCopy],  [EShort2 mutableCopy],  [FShort2 mutableCopy],  [GShort mutableCopy], nil],
